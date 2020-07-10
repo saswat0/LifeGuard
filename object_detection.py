@@ -58,10 +58,6 @@ def detect_common_objects(image, confidence=0.5, nms_thresh=0.3):
     global classes
     global dest_dir
 
-    # all the weights and the neural network algorithm are already preconfigured
-    # as we are using YOLO
-
-    # this part of the script just downloads the YOLO files
     config_file_name = 'yolov3.cfg'
     config_file_abs_path = dest_dir + os.path.sep + config_file_name
 

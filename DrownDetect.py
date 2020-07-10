@@ -1,5 +1,6 @@
 import cvlib as cv
 from object_detection import draw_bbox
+from object_detection import detect_common_objects
 import cv2
 import time
 import numpy as np
@@ -15,7 +16,7 @@ while webcam.isOpened():
 
     _, frame = webcam.read()
 
-    bbox, label, conf = cv.detect_common_objects(frame)
+    bbox, label, conf = detect_common_objects(frame)
 
     if(len(bbox) > 0):
         bbox0 = bbox[0]
