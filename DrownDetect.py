@@ -42,8 +42,8 @@ while webcam.isOpened():
             centre = [0,0]
 
 
-            for i in range(0, len(bbox)):
-                centre[i] =[(bbox[i][0]+bbox[i][2])/2,(bbox[i][1]+bbox[i][3])/2 ]
+            #for i in range(0, len(bbox)):
+                #centre[i] =[(bbox[i][0]+bbox[i][2])/2,(bbox[i][1]+bbox[i][3])/2 ]
 
             centre =[(bbox0[0]+bbox0[2])/2,(bbox0[1]+bbox0[3])/2 ]
 
